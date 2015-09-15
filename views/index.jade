@@ -1,5 +1,17 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+    header
+        nav.navbar.navbar-inverse
+            .container-fluid
+                .navbar-header
+                    a.navbar-brand(href="/") Brand
+                ul.nav.navbar-nav.navbar-right
+                    li
+                        a(href="/") Order
+                    li
+                        a(href="/track") Track
+                    li
+                        a(href="/contact") Contact
+    #main
+        div(ng-view)
