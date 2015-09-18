@@ -2,6 +2,7 @@ var express = require('express');
 var router = express.Router();
 var blockchain = require('blockchain.info');
 var crypto = require('crypto');
+var Poloniex = require('../lib/poloniex');
 
 //initialize an instance of Receive
 var url = 'http://104.236.4.90/api/confirm';
@@ -24,6 +25,12 @@ router.get('/api/create', function(req, res, next){
       res.json(data.input_address);
     }
   });
+});
+
+router.get('/rate', function(req,res,next){
+    Poloniex.getSellPrice(function(data){
+       res.json(data);
+    });
 });
 
 router.get('/*', function(req,res,next){

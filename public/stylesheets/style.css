@@ -1,0 +1,21 @@
+ul {
+    list-style-type: none;
+}
+
+header {
+    background-color: #00b3ee;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.active {
+    background-color: #00d6b2;
+}
+
+#main {
+    height: 500px;
+}

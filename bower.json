@@ -1,0 +1,19 @@
+{
+  "name": "personal_project",
+  "version": "0.0.0",
+  "homepage": "https://github.com/PsychicCat/personal_project",
+  "authors": [
+    "Brendan Telzrow <telzrowb@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-material": "~0.11.0"
+  }
+}
